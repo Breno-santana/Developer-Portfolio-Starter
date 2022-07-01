@@ -1,0 +1,146 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #000;
+    color: #fff;
+}
+
+:root{
+    --titulo: 'Prata', serif;
+    --paragrafo: 'Inter', sans-serif;;
+}
+
+/*Fontes*/
+
+.fonte-prata{
+    font-family: var(--titulo);
+}
+
+.fonte-inter{
+    font-family: var(--paragrafo);
+    color: #808080;
+}
+
+/*Header*/
+
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 6rem;
+}
+
+.menu-navegacao ul, li{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 2.5rem;
+}
+
+.menu-navegacao .ancora{
+    text-decoration: none;
+    color: #808080;
+}
+
+.cabecalho .botao-1, .botao-2{
+    padding: 1rem 2rem;
+    border: none;
+    background: #ffff02;
+    font-size: 1rem;
+}
+
+/*Principal*/
+
+#principal{
+    margin: 2rem 6rem;
+}
+
+.box-titulo-paragrafo-1 .titulo-h1{
+    font-size: 3.5rem;
+    margin-bottom: 1rem ;
+}
+
+.paragrafo-1{
+    margin-bottom: 5rem;
+}
+
+.box-logo-empresas{
+    display: flex;
+    flex-direction: row;
+    gap: 6rem;
+    margin-bottom: 4rem;
+}
+
+.box-imagem-titulo-paragrafo{
+    display: flex;
+    flex-direction: row;
+    gap: 5rem;
+}
+
+.box-titulo-paragrafo{
+    display: flex;
+    flex-direction: row;
+    gap: 10rem;
+    padding: 3rem 0rem 4rem 0rem;
+    margin: 5rem 0; 
+    align-items: center;
+    background: #414040;
+}
+
+.subtitulo-h2{
+    font-size: 2rem;
+}
+
+.margem-h2{
+    margin: 1rem 0;
+}
+
+.depois-h2-1::after{
+    content: "⟶";
+    padding-left: 0.5rem;
+}
+
+.depois-h2::after{
+    content: "⟶";
+    padding-left: 0.5rem;
+}
+
+.padding-para-1{
+    padding: 1rem 0rem 1.5rem 0rem;
+}
+.padding-para-2, .padding-para-3, .padding-para-4, .padding-para-5{
+    padding: 0rem 0rem 1.5rem 0rem;
+}
+
+.box-titulo-paragrafo-botao{
+    padding: 1rem 0rem 1rem 0rem;
+    
+}
+
+.item-box-titulo-paragrafo{
+    padding-bottom: 1rem;
+}
+
+.rodape{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 6rem;
+    background: #414040;
+}
+
+.icones{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
