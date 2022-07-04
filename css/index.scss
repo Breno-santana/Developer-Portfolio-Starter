@@ -1,0 +1,29 @@
+@import './fontes';
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+$cor-botoes: #ffbe44;
+$cor-fonte: #808080;
+
+@mixin displayFlex(){
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fonte-prata{
+    font-family: $fonte-prata;
+}
+
+.fonte-inter{
+    font-family: $fonte-inter .;
+}
+
+.cabecalho{
+    @include displayFlex();
+}
