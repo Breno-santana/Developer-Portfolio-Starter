@@ -1,4 +1,4 @@
-@import './fontes';
+@import 'fontes';
 
 *{
     padding: 0;
@@ -6,24 +6,69 @@
     box-sizing: border-box;
 }
 
-$cor-botoes: #ffbe44;
+$cor-botoes: #eeee5b;
 $cor-fonte: #808080;
+$cor-fonte2: #fff ;
+$cor-fundo: #000;
 
 @mixin displayFlex(){
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
 .fonte-prata{
     font-family: $fonte-prata;
+    color: $cor-fonte2;
 }
 
 .fonte-inter{
-    font-family: $fonte-inter .;
+    font-family: $fonte-inter;
 }
 
+body{
+    background: $cor-fundo;
+    color: $cor-fonte;
+}
+
+/*header*/
 .cabecalho{
     @include displayFlex();
+    padding: 2.5rem 2rem;
+
+    ul{
+        @include displayFlex();
+        gap: 1rem;
+
+        li{ 
+            list-style: none;
+        }
+    }
+
+    .ancora{
+        align-items: center;
+        text-decoration: none;
+        color: $cor-fonte;
+    }
+
+    .botao-1{
+        padding: 1rem 2rem;
+        background: $cor-botoes;
+        color: #000;
+        font-size: 1.3rem;
+    }
 }
+
+/*main*/
+@mixin displayFlex2() {
+    display: flex;
+    flex-direction: column;
+}
+
+#principal{
+    @include displayFlex2();
+    .box-titulo-paragrafo-1{
+
+    }
+} 
