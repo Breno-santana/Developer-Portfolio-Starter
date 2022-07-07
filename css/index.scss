@@ -7,7 +7,6 @@
     box-sizing: border-box;
 }
 
-/*functions*/
 @mixin displayFlex(){
     display: flex;
     flex-direction: row;
@@ -33,6 +32,12 @@
     flex-direction: row;
     gap: 3rem;
 }
+
+@mixin displayIcon() {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+} 
 
 .fonte-prata{
     font-family: $fonte-prata;
@@ -118,6 +123,58 @@ body{
 
         .item-box-titulo-paragrafo{
             padding: 0rem 6rem;
+
+            .subtitulo-h2{
+                font-size: 2rem;
+            }
+
+            .padding-para-1{
+                padding: 1rem 0rem 2rem 0rem;
+            }
+        }
+
+        .box-paragrafo{
+            .padding-para-2{
+                padding: 1rem 0;
+            }.padding-para-3{
+                padding: 1rem 0;
+            } .padding-para-4{
+                padding: 1rem 0;
+            } .padding-para-5{
+                padding: 1rem 0;
+            }
+        }
+    }
+
+    .box-titulo-paragrafo-botao{
+        //@include displayFlex2;
+        margin-left: 6rem;
+
+        .item-box-titulo-paragrafo{
+            .subtitulo-h2{
+                font-size: 2rem;
+                padding: 1rem 0;
+            }
+        }
+
+        .botao-2{
+            padding: 1rem 2.5rem;
+            background: $cor-botoes;
+            color: #000;
+            font-size: 1.3rem;
+            margin: 1rem 0;
         }
     }
 } 
+
+/*footer*/
+.rodape{
+    @include displayFlex();
+    background: $cor-fundo2;
+    padding: 2rem 6rem;
+    margin-top: 3rem;
+
+    .icones{
+        @include displayIcon();
+    }
+}
