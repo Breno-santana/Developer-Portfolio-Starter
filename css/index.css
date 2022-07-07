@@ -5,7 +5,6 @@
   box-sizing: border-box;
 }
 
-/*functions*/
 .fonte-prata {
   font-family: "Prata", serif;
   color: #fff;
@@ -98,4 +97,52 @@ body {
 }
 #principal .box-titulo-paragrafo .item-box-titulo-paragrafo {
   padding: 0rem 6rem;
+}
+#principal .box-titulo-paragrafo .item-box-titulo-paragrafo .subtitulo-h2 {
+  font-size: 2rem;
+}
+#principal .box-titulo-paragrafo .item-box-titulo-paragrafo .padding-para-1 {
+  padding: 1rem 0rem 2rem 0rem;
+}
+#principal .box-titulo-paragrafo .box-paragrafo .padding-para-2 {
+  padding: 1rem 0;
+}
+#principal .box-titulo-paragrafo .box-paragrafo .padding-para-3 {
+  padding: 1rem 0;
+}
+#principal .box-titulo-paragrafo .box-paragrafo .padding-para-4 {
+  padding: 1rem 0;
+}
+#principal .box-titulo-paragrafo .box-paragrafo .padding-para-5 {
+  padding: 1rem 0;
+}
+#principal .box-titulo-paragrafo-botao {
+  margin-left: 6rem;
+}
+#principal .box-titulo-paragrafo-botao .item-box-titulo-paragrafo .subtitulo-h2 {
+  font-size: 2rem;
+  padding: 1rem 0;
+}
+#principal .box-titulo-paragrafo-botao .botao-2 {
+  padding: 1rem 2.5rem;
+  background: #eeee5b;
+  color: #000;
+  font-size: 1.3rem;
+  margin: 1rem 0;
+}
+
+/*footer*/
+.rodape {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: #313030;
+  padding: 2rem 6rem;
+  margin-top: 3rem;
+}
+.rodape .icones {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
 }/*# sourceMappingURL=index.css.map */
