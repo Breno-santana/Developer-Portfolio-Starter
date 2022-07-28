@@ -1,5 +1,3 @@
-# Developer Portfolio Starter
- Portfolio Starter
 
 # Welcome to Codewell! 👋
 
