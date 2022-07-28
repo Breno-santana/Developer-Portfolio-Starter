@@ -1,0 +1,16 @@
+/*=header=*/
+@media (min-width:300px) and (max-width: 900px){
+    /*Tamanho minimo e máximo onde o menu hamburguer aparecerá*/
+    body{
+        background-color: red;
+    }
+}
+
+@media (min-width: 300px) and (max-width: 400px) {
+    /*Tamanho de tela para tablets*/
+    .cabecalho ul, li, .botao-1{
+        display: none;
+    }
+}
+/*Continua...*/
+
